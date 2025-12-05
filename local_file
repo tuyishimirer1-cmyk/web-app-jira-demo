@@ -1,0 +1,4 @@
+resource "local_file" "webapp_app" {
+  content  = local.app_code
+  filename = "${path.module}/webapp/src/index.js"
+}
